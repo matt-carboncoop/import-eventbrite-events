@@ -302,7 +302,7 @@ class Import_Eventbrite_Events_TEC {
 		}
 		$create_venue = tribe_create_venue( array(
 			'Venue'   => isset( $venue['name'] ) ? $venue['name'] : '',
-			'Address' => isset( $venue['full_address'] ) ? $venue['full_address'] : $venue['address_1'],
+			'Address' => isset( $venue['address_1'] ) ? $venue['address_1'] : '',
 			'City'    => isset( $venue['city'] ) ? $venue['city'] : '',
 			'State'   => isset( $venue['state'] ) ? $venue['state'] : '',
 			'Country' => $country,
